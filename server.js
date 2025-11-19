@@ -29,7 +29,7 @@ app.post("/create-session", async (req, res) => {
 
     const session = await stripe.identity.verificationSessions.create({
       type: "document",
-      return_url: `${frontendUrl}/complete?session_id={SESSION_ID}`,
+      return_url: `${frontendUrl}/complete`,
     });
 
     res.json({ url: session.url });
