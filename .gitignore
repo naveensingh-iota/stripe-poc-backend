@@ -1,2 +1,14 @@
 node_modules
 .env
+
+# SQLite database files (environment-specific, should not be committed)
+*.db
+*.db-shm
+*.db-wal
+
+# SQLite executables and tools (should be installed via package manager)
+sqldiff.exe
+sqlite3.exe
+sqlite3.zip
+sqlite3_analyzer.exe
+sqlite3_rsync.exe
